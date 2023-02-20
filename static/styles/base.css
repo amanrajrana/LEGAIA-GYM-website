@@ -1,0 +1,212 @@
+/* import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Manrope:wght@600;800&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --logo-font: 'Delius';
+    --heading-font: 'Manrope';
+    --primary-font: 'Roboto';
+    --primary-color: #000000;
+    --secondary-color: #9B1A1D;
+    font-size: 18px;
+}
+
+/* all button style  */
+button {
+    background-color: var(--secondary-color);
+    padding: 6px 9px;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+
+
+a {
+    color: var(--secondary-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* LOGO SYTLING */
+.logo {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.logo a {
+    color: #fff;
+}
+
+.logo h1 {
+    font-family: var(--logo-font);
+    font-size: 1.5rem;
+}
+
+.logo h1 span {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    border: none;
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    margin: 0 1px;
+}
+
+.logo p {
+    opacity: 0.9;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--primary-color);
+    align-items: center;
+    font-family: var(--primary-font);
+    padding: 0.7vw 30px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.1);
+}
+
+
+
+/* main style  */
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    font-size: 1.2rem;
+}
+
+
+nav .mainMenu li a:hover {
+    color: var(--secondary-color);
+}
+
+nav .openMenu {
+    font-size: 1.5rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .openMenu i {
+    color: #fff;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.fa-facebook:hover { color: rgb(0, 110, 255) }
+.fa-twitter:hover { color: rgb(86, 154, 243) }
+.fa-instagram:hover { color: rgb(255, 0, 191) }
+.fa-github:hover { color: rgb(255, 123, 0) }
+
+
+/* footer styling  */
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: var(--primary-font);
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.1);
+}
+
+footer #author {
+    width: 100%;
+    text-align: right;
+    font-size: 0.6rem;
+    font-style: italic;
+}
+
+
+@media (max-width: 800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--primary-color);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+    nav .mainMenu li {
+        font-size: 1.5rem;
+        margin: 6px auto;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .closeMenu i {
+        margin: 13px 30px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: var(--secondary-color);
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    footer {
+        display: none;
+    }
+}

@@ -1,0 +1,46 @@
+extends base.pug
+
+block style
+    style 
+        include ../static/styles/join.css
+
+block content
+
+    section     
+        .container
+            .box-left 
+                img(src="../static/img/image-4.jpg", alt="gym-image")
+            .box-right
+                h2 Join Now 
+                form(action='/api/newuser' method='post')
+                    input(type='text' name='name' id='' placeholder='Your Name*' required='')
+                    input(type='email' name='email' id='' placeholder='Your Email*' required='')
+                    input(type='tel' name='Phone' id='' placeholder='Your Phone*' required='')
+                    
+                    div#way2contact
+                        div
+                            span How can we conatct you?
+                        div
+                            div
+                                input(type='radio' name='way2contact' value='Email')
+                                label Email
+                            div
+                                input(type='radio' name='way2contact' value='PhoneCall')
+                                label Phone Call
+                            div
+                                input(type='radio' name='way2contact' value='Whatsapp')
+                                label Whatsapp
+                            //-    textarea(name='massage' id='' placeholder='Your Message*')
+                        div#btn
+                            button Submit
+                .contact-info
+                    div
+                        i.fa.fa-phone(aria-hidden='true')
+                        | Phone: +91 87097 88098
+                    div
+                        i.fa.fa-envelope-o(aria-hidden='true')
+                        | Email: 
+                        a(href='mailto:muskanrahul@shadi.com') muskanrahul@shadi.com
+                    div
+                        i.fa.fa-map-marker(aria-hidden='true')
+                        | Address: Muskan Colony, D Block, Gandhi Maidan, Gali No 3, INDIA 
