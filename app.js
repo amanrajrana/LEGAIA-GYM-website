@@ -4,13 +4,13 @@ const path = require('path');
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const contactFormSchema = require('./models/contactFormShema')
+const contactFormSchema = require('./models/contactFormSchema')
 const newUserSchema = require('./models/newUser')
 
 const hostname = '127.0.0.1';
 const port = 8080;
 
-//MONGOOSE SPECIFIC CONFIGRATION
+//MONGOOSE SPECIFIC CONFIGURATION
 const db = 'mongodb://127.0.0.1:27017/MyLegaliaGym';
 
 mongoose.set('strictQuery', false);
@@ -20,12 +20,12 @@ mongoose.connect(db, { useNewUrlParser: true }).then(() => {
     console.log("DB not connected");
 })
 
-//EXPRESS SPECIFIC CONFIGRATION
+//EXPRESS SPECIFIC CONFIGURATION
 app.use('/static', express.static('static'));  //for serving static file
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json());
 
-//PUG SPECIFIC CONFIGRATION
+//PUG SPECIFIC CONFIGURATION
 app.set('view-engine', 'pug');  //set view engine as PUG
 app.set('views', path.join(__dirname, 'views')); //join view
 
@@ -74,7 +74,7 @@ app.post("/api/contact", async (req, res) => {
     try {
         const newContactForm = await contactForm.save();
         res.redirect("/contact");
-        // console.log("data save sucessfully")
+        // console.log("data save successfully")
     } catch (err) {
         console.log(err);
     }
@@ -83,6 +83,7 @@ app.post("/api/contact", async (req, res) => {
 
 // new user api 
 app.post("/api/newuser", async (req, res) => {
+    console.log(req.body);
     const name = req.body.name;
     const email = req.body.email;
     const phone = req.body.Phone;
@@ -98,7 +99,7 @@ app.post("/api/newuser", async (req, res) => {
     try {
         const newUsers = await newUser.save();
         res.redirect("/join");
-        // console.log("data save sucessfully")
+        // console.log("data save successfully")
     } catch (err) {
         console.log(err);
     }
