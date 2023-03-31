@@ -27,12 +27,16 @@ This is the GYM Website landing page with 5 pages (HOME ABOUT US SERVICES JOIN N
 - **NodeJS** - backend
 - **ExpressJS** - backend framework
 - **MongoDB** - Database
-## Screenshots
 
 ---
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+## Screenshots
 
+##### Wide screen
+<img src="static\img\Screenshot-1.png" height="300" alt="desktop-view">
+
+##### Mobile screen
+<img src="static\img\Screenshot-2.png" height="300" alt="desktop-view">
 
 ## Tech Stack
 
