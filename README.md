@@ -62,7 +62,7 @@ This is the GYM Website landing page with 5 pages (HOME ABOUT US SERVICES JOIN N
 Clone the project
 
 ```bash
-  git clone https://github.com/amanrana0/LEGAIA-GYM-website.git
+  git clone https://github.com/amanrajrana/LEGAIA-GYM-website.git
 ```
 
 Go to the project directory
