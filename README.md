@@ -131,7 +131,7 @@ Yes, This is an open-source code so you can use it anywhere you want
 
 If you have any feedback, please reach out to us via the following way
 
-- [Linkedin](https://www.linkedin.com/in/arrana)
+- [Linkedin](https://www.linkedin.com/in/amanrajrana)
 
 ----
 
@@ -152,8 +152,8 @@ This is my first full-stack project. In this project, I Learned many things. A f
 ## Authors
 **_Aman Raj Rana_**
 
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arrana)
-[![github](https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amanrana0)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amanrajrana)
+[![github](https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amanrajrana)
 
 ## 🚀 About Me
 I'm a MERN stack developer...
